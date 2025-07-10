@@ -1,0 +1,144 @@
+:root {
+    --wrapper_image_width: 29.33%;
+}
+
+header {
+    color: #333;
+}
+
+#nav_1 {
+    height: 98px;
+    margin-top: var(--header_height);
+    background-color: #f6f6f6;
+}
+
+header .header_nav #header_nav_underline {
+    border-bottom: 1.8px solid #333;
+}
+
+.firstnav_underline {
+    text-decoration: underline !important;
+}
+
+.title_page {
+    display: inline-block;
+    font-size: 20px;
+    /* line-height: 98px; */
+    font-weight: 600;
+    margin-top: calc((98px - 20px) / 2.2);
+    padding: 0px 31px;
+}
+
+#nav_2 {
+    background-color: #fff;
+    /* background-color: #798390; */
+    padding: 48px 80px 70px;
+}
+
+#wrapper_narrow {
+    text-align: center;
+    margin: 0 0 44px;
+}
+
+#wrapper_narrow li {
+    display: inline-block;
+    /* position: relative; */
+    vertical-align: middle;
+    cursor: pointer;
+    color: #454545;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    display:inline-table;
+}
+
+#wrapper_narrow .underline_hover {
+    margin: 0 10px 10px;
+}
+
+#wrapper_narrow .underline_hover:hover {
+    border-bottom: 1px solid #454545 !important;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    text-align: center;
+    user-select: none;
+}
+
+.div_narrow {
+    text-align: center;
+}
+
+#btn_narrow_1 {
+    border-bottom: 1px solid #454545;
+}
+
+#div_narrow_2 {
+    display: none;
+}
+
+.link {
+    float: left;
+    font-weight: 400;
+    line-break: anywhere;
+}
+
+.link i{
+    margin-right: 15px;
+}
+
+
+
+.show_images {
+    padding-right: var(--padding_left_right_show_images) !important;
+    padding-left: var(--padding_left_right_show_images) !important;
+    padding-top: 35px;
+    display: inline-block;
+    text-align: center;
+}
+
+.wrapper_image{
+    /* background-color: #f6c0a5; */
+    width: var(--width_wrapper_image);
+    display: inline-block !important;
+    padding: 0px 25px 0px;
+}
+
+.wrapper_image img {
+    width: var(--wrapper_image_width);
+    height: auto;
+    box-shadow: 3px 4px 12px 0 rgba(0, 0, 0, .21);
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center 65%;
+    aspect-ratio: 16 / 9;
+    margin-right: -5px;
+    transition: transform 0.3s ease;
+}
+
+.wrapper_image img:hover::after {
+    opacity: 1;
+}
+
+/* Tuỳ chọn: Zoom ảnh nhẹ khi hover */
+.wrapper_image img:hover {
+    transform: scale(1.05);
+}
+
+.img_year_titlename {
+    width:  var(--wrapper_image_width);
+    display: inline-block;
+    margin-right: -5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.vertical_img img {
+    aspect-ratio: 3 / 4;
+}
