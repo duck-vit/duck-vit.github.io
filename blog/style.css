@@ -1,0 +1,63 @@
+#nav_1 {
+    height: var(--nav_1_height);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 80% 80%;
+    background-color: rgba(0, 0, 0, 0.46);
+    background-blend-mode: darken;
+    padding: 9.3% 0 6.5% 0;
+    background-image: url("https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/1000000589_01.jpg?v=1720281971439");
+}
+
+:root {
+    --main_web_title_font_size: 100px;
+    --intro_text_font_size: 16px;
+    --main_web_title_and_intro_text_distance: 12px;
+}
+
+#web_title {
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#main_web_title {
+    font-size: var(--main_web_title_font_size);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.blog_box {
+    padding: 38px 0px 33px;
+    letter-spacing: 1px;
+}
+
+.blog_main_title {
+    margin-bottom: 15px;
+}
+
+.blog_main_title a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.blog_main_title a:hover {
+    color: #f6c0a5;
+    transition: 0.2s;
+}
+
+.blog_intro_text p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.blog_date {
+    margin-top: 13px;
+    padding-top: 10px;
+}
+
+.blog_date p {
+    font-size: 16px;
+    font-weight: 100;
+}

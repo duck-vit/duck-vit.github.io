@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/core/style.css">
+    <link rel="stylesheet" href="/core/chuyendi/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="shortcut icon" href="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20220613053206-fotor-20240630164058.png?v=1720279229811">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Blog</title>
+</head>
+
+<style>
+    #nav_1 {
+    height: var(--nav_1_height);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 80% 80%;
+    background-color: rgba(0, 0, 0, 0.46);
+    background-blend-mode: darken;
+    padding: 9.3% 0 6.5% 0;
+    background-image: url("https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/1000000589_01.jpg?v=1720281971439");
+}
+
+:root {
+    --main_web_title_font_size: 100px;
+    --intro_text_font_size: 16px;
+    --main_web_title_and_intro_text_distance: 12px;
+}
+
+#web_title {
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#main_web_title {
+    font-size: var(--main_web_title_font_size);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.blog_box {
+    padding: 38px 0px 33px;
+    letter-spacing: 1px;
+}
+
+.blog_main_title {
+    margin-bottom: 15px;
+}
+
+.blog_main_title a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.blog_main_title a:hover {
+    color: #f6c0a5;
+    transition: 0.2s;
+}
+
+.blog_intro_text p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.blog_date {
+    margin-top: 13px;
+    padding-top: 10px;
+}
+
+.blog_date p {
+    font-size: 16px;
+    font-weight: 100;
+}  
+</style>
+
+<body>
+    <div class="wrapper_bgr_header">
+        <!-- <div class="header_items web_name">
+            <span>ASSEMBLE</span>
+        </div> -->
+    </div>
+  
+    <header id="header">
+        <div class="header_items web_name">
+            <span>DUC VIET</span>
+        </div>
+        
+        <div class="header_items" id="header_menu">
+            <div id="menu_icon">
+                <span class="material-symbols-outlined" id="menu_line_1" style="margin-top: -7px;">remove</span>
+                <span class="material-symbols-outlined" id="menu_line_2" style="margin-top: 0px;">remove</span>
+                <span class="material-symbols-outlined" id="menu_line_3" style="margin: 7px 0px -7px;">remove</span>
+            </div>
+        </div>
+        
+        <!-- 'last_underline_hover' ở cuối nên bị lỗi -->
+        <div class="wrapper_header_nav">
+            <div class="header_items header_nav" id="last_underline_hover">
+                <a>
+                    <span class="underline_hover">
+                        Error
+                        <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="header_items header_nav">
+                <a href="/văn_bản">
+                    <span class="underline_hover">
+                        Văn bản
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </span>
+                </a>
+            </div>
+
+            <div class="header_items header_nav">
+                <a href="/projects">
+                    <span class="underline_hover">
+                        Projects
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </span>
+                </a>
+            </div>
+            <div class="header_items header_nav">
+                <a href="/blog">
+                    <span id="header_nav_underline" class="underline_hover">
+                        Blog
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </span>
+                </a>
+            </div>
+            <div class="header_items header_nav" id="header_nav_kiniem">
+                <span class="underline_hover">
+                    <a href="/kỉ_niệm">Kỉ niệm</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+
+                <div class="header_firstnav">
+                    <a href="/kỉ_niệm/bé_ủn"><li>Bé Ủn</li></a>
+                    <a href="/kỉ_niệm/chíp"><li>Chíp</li></a>
+                    <a href="/kỉ_niệm/hồi_nhỏ"><li>Hồi nhỏ</li></a>
+                </div>
+            </div>
+            <div class="header_items header_nav" id="header_nav_chuyendi">
+                <span class="underline_hover">
+                    <a href="/chuyến_đi">Chuyến đi</a>
+                    <i class="fa-solid fa-angle-down"></i>
+
+                    <div class="header_firstnav outer_nav">
+                        <a href="/chuyến_đi/nghệ_an"><li>Nghệ An</li></a>
+                        <a href="/chuyến_đi/quảng_bình"><li>Quảng Bình</li></a>
+                        <a href="/chuyến_đi/nha_trang"><li>Nha Trang</li></a>
+                        <div class="outer">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="/chuyến_đi/đà_nẵng">Đà Nẵng</a></li>
+                        
+                            <div class="header_secondnav">
+                                <a href="/chuyến_đi/đà_nẵng/năm_2018"><li>Năm 2018</li></a>
+                                <a href="/chuyến_đi/đà_nẵng/năm_2023"><li>Năm 2023</li></a>
+                                <a href="/chuyến_đi/đà_nẵng/năm_2025"><li>Năm 2025</li></a>
+                            </div>
+                        </div>
+                        <div class="outer">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="/chuyến_đi/hà_nội">Hà Nội</a></li>
+                        
+                            <div class="header_secondnav">
+                                <a href="/chuyến_đi/hà_nội/năm_2022"><li>Năm 2022</li></a>
+                                <a href="/chuyến_đi/hà_nội/năm_2024"><li>Năm 2024</li></a>
+                            </div>
+                        </div>
+                        <a href="/chuyến_đi/sầm_sơn"><li>Sầm Sơn</li></a>
+                        <a href="/chuyến_đi/đà_lạt"><li>Đà Lạt</li></a>
+                        <a href="/chuyến_đi/ninh_bình"><li>Ninh Bình</li></a>
+                    </div>
+                </span>
+            </div>
+            <div class="header_items header_nav">
+                <a href="/">
+                    <span class="underline_hover">
+                        Home
+    <!--                     <i class="fa-solid fa-angle-down"></i> -->
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav_1">
+        <div id="web_introduction">
+            <div id="web_title">
+                <div><span id="main_web_title">BLOG</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav_2">
+        <div id="posts"></div>
+        <!-- <div class="blog_box">
+            <div class="blog_main_title"></div>
+            <div class="blog_intro_text"></div>
+            <div class="blog_date"></div>
+        </div> -->
+    </nav>
+
+    <footer>
+            <div class="ft_column vertical_column" style="padding: 0px 15px 0px 0px">
+                <div class="vertical_wrapper">
+                    <div class="ft_title">About me</div>
+                    <div class="ft_content">Trang web về du lịch, chụp ảnh, blogs, video, những khoảnh khắc đáng nhớ,...</div>
+                    <div style="height: 20px;"></div>
+                </div>
+            </div>
+            <div class="ft_column">
+                <div class="ft_title">Connect With Me</div>
+                <div class="ft_content">
+                    <li><a target="_blank" href="https://www.youtube.com/@sunstation">Youtube</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100074122920574">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/duc.viet.15/">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.threads.net/@duc.viet.15">Threads</a></li>
+                    <li><a target="_blank" href="https://www.pexels.com/vi-vn/@sun-station-329898058/">Pexels</a></li>
+                </div>
+            </div>
+            <div class="ft_column">
+                <div class="ft_title">Additional Links</div>
+                <div class="ft_content">
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/chuyến_đi">Trips</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/kỉ_niệm">Moments</a></li>
+                </div>
+            </div>
+            <div class="ft_column" style="padding: 0px 0px 0px 30px">
+                <div class="ft_title">Contact Me</div>
+                <div class="ft_content">
+                    Quang Tam ward, Thanh Hoa city<br>
+                    vietnguyen154022@gmail.com<br>
+                    sunstationor@gmail.com<br>
+                    Call us on:<br>
+                    0585 682 008<br>
+                    0327 378 858<br>
+                </div>
+            </div>
+    </footer>
+</body>
+<script src="/core/chuyendi/main.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+    function loadClient() {
+        gapi.client.setApiKey('AIzaSyBOobhMrURHhXlTtPGoadCH4Zmb8T9jLsM');  // Thay YOUR_API_KEY bằng API key của bạn
+        return gapi.client.load('https://content.googleapis.com/discovery/v1/apis/blogger/v3/rest')
+            .then(() => {
+                console.log('GAPI client loaded for API');
+                getPosts();
+            }, err => console.error('Error loading GAPI client for API', err));
+    }
+
+    function getPosts() {
+        return gapi.client.blogger.posts.list({
+            blogId: '8765622590681478851'  // Thay YOUR_BLOG_ID bằng Blog ID của bạn
+        }).then(response => {
+            const posts = response.result.items;
+            const container = document.getElementById('posts');
+            posts.forEach(post => {
+                const blogBox = document.createElement('div');
+                blogBox.className = 'blog_box';
+
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'blog_main_title';
+                const title = document.createElement('a');
+                title.href = post.url;
+                title.target = '_blank';  // Mở liên kết trong tab mới
+                title.innerText = post.title;
+                titleDiv.appendChild(title);
+                blogBox.appendChild(titleDiv);
+
+                const introDiv = document.createElement('div');
+                introDiv.className = 'blog_intro_text';
+                const contentPreview = document.createElement('p');
+                contentPreview.innerHTML = post.content.substring(0, 200) + '...';
+                introDiv.appendChild(contentPreview);
+                blogBox.appendChild(introDiv);
+
+                const dateDiv = document.createElement('div');
+                dateDiv.className = 'blog_date';
+                const publishedDate = document.createElement('p');
+                publishedDate.innerText = new Date(post.published).toLocaleDateString();
+                dateDiv.appendChild(publishedDate);
+                blogBox.appendChild(dateDiv);
+
+                container.appendChild(blogBox);
+            });
+        }, err => console.error('Error fetching posts', err));
+    }
+
+    gapi.load('client', loadClient);
+</script>
+</html>
