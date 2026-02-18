@@ -19,6 +19,28 @@
 
     <title>Chuyến đi Hà Nội</title>
 </head>
+
+<style>
+    table {
+        border-collapse: collapse;
+        border-top: 1px solid #c6c6c6;
+    }
+
+    th, td {
+        border-bottom: 1px solid #c6c6c6;
+        padding: 10px 25px;
+        text-align: left;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #fff2ec;
+    }
+
+    td:first-child, th:first-child, td:nth-child(3), th:nth-child(3) {
+        text-align: center;
+    }
+</style>
+
 <body>
     <div class="wrapper_bgr_header">
         <!-- <div class="header_items web_name">
@@ -137,25 +159,35 @@
     </nav>
 
     <nav id="nav_2">      
-        <article class="show_images">
-            <div class="wrapper_image">
-                <a href="năm_2022">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20220625054331.jpg?v=1743957208318">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="năm_2024">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_20240817_110909.jpg?v=1743957710585">
-                </a>
-              
-                <div id="img_year_title">
-                  <div class="img_year_titlename">2022</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">2024</div>
-                </div>
-            </div>
-        </article>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Mục</th>
+                <th>Truy cập</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Năm 2022</td>
+                <td>
+                    <a href="/chuyến_đi/hà_nội/năm_2022/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Năm 2024</td>
+                <td>
+                    <a href="/chuyến_đi/hà_nội/năm_2024/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+            </tr>
+        </table>
     </nav>
 
     <footer>
