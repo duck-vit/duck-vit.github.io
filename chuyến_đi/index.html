@@ -19,6 +19,28 @@
 
     <title>Chuyến đi</title>
 </head>
+
+<style>
+    table {
+        border-collapse: collapse;
+        border-top: 1px solid #c6c6c6;
+    }
+
+    th, td {
+        border-bottom: 1px solid #c6c6c6;
+        padding: 10px 25px;
+        text-align: left;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #fff2ec;
+    }
+
+    td:first-child, th:first-child, td:nth-child(2), th:nth-child(2), td:nth-child(3), th:nth-child(3), td:nth-child(4), th:nth-child(4) {
+        text-align: center;
+    }
+</style>
+
 <body>
     <div class="wrapper_bgr_header">
         <!-- <div class="header_items web_name">
@@ -137,73 +159,183 @@
     </nav>
 
     <nav id="nav_2">
-        <article class="show_images">
-            <div class="wrapper_image">
-                <a href="/chuyến_đi/nghệ_an">
-                    <img style="object-position: center 23%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20180304095854.jpg?v=1745123185516">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/chuyến_đi/quảng_bình">
-                    <img style="object-position: center 47%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20180802090147.jpg?v=1745123475867">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/chuyến_đi/nha_trang">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20220613175100.jpg?v=1745123675040">
-                </a>
-              
-                <div class="img_year_title">
-                  <div class="img_year_titlename">Nghệ An</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Quảng Bình</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Nha Trang</div>
-                </div>
-            </div>
-        
-            <div style="height: 50px; display: inline-block"></div>
+        <table>
+            <tr>
+                <th>Năm</th>
+                <th>Tháng</th>
+                <th>Chuyến đi</th>
+                <th>Truy cập</th>
+                <th>Ghi chú</th>
+            </tr>
+
+            <tr>
+              <td rowspan="3">2025</td>
+              <td rowspan="3">Tháng 6</td>
+              <td>Đà Nẵng</td>
+              <td>
+                    <a href="/chuyến_đi/đà_nẵng/năm_2025/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+              <td>Đi với lớp</td>
+            </tr>
           
-            <div class="wrapper_image">
-                <a href="/chuyến_đi/đà_nẵng">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_20230625_111551.jpg?v=1745123910680">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/chuyến_đi/hà_nội">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_20240817_110909.jpg?v=1743957710585">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/chuyến_đi/đà_lạt">
-                    <img style="object-position: center 45%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_20240610_090114.jpg?v=1745124275672">
-                </a>
-              
-                <div class="img_year_title">
-                  <div class="img_year_titlename">Đà Nẵng</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Hà Nội</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Đà Lạt</div>
-                </div>
-            </div>
-        
-            <div style="height: 50px; display: inline-block"></div>
+            <tr>
+                <td>Quảng Bình</td>
+                <td>
+                    <!-- <a href="/chuyến_đi/quảng_bình/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a> -->
+                </td>
+                <td>Đi với lớp</td>
+            </tr>
           
-            <div class="wrapper_image">
-                <a href="/chuyến_đi/ninh_bình">
-                    <img src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_0533.JPG?v=1745124583384">
-                </a>
-              
-                <div class="img_year_title">
-                  <div class="img_year_titlename">Ninh Bình</div>
-                </div>
-            </div>
-        </article>
+            <tr>
+                <td>Nghệ An</td>
+                <td>
+                    <!-- <a href="/chuyến_đi/nghệ_an/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a> -->
+                </td>
+                <td>Đi với lớp</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">2024</td>
+                <td rowspan="2">Tháng 8</td>
+                <td>Ninh Bình</td>
+                <td>
+                    <a href="/chuyến_đi/ninh_bình/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Hà Nội</td>
+                <td>
+                    <a href="/chuyến_đi/hà_nội/năm_2024/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Tháng 6</td>
+                <td>Nghệ An</td>
+                <td>
+                    <!-- <a href="/chuyến_đi/nghệ_an/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a> -->
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Đà Lạt</td>
+                <td>
+                    <a href="/chuyến_đi/đà_lạt/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>2023</td>
+                <td>Tháng 6</td>
+                <td>Đà Nẵng</td>
+                <td>
+                    <a href="/chuyến_đi/đà_nẵng/năm_2023/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">2022</td>
+                <td rowspan="2">Tháng 6</td>
+                <td>Hà Nội</td>
+                <td>
+                    <a href="/chuyến_đi/hà_nội/năm_2022/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Nha Trang</td>
+                <td>
+                    <a href="/chuyến_đi/nha_trang/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">2018</td>
+                <td>Tháng 3</td>
+                <td>Nghệ An</td>
+                <td>
+                    <a href="/chuyến_đi/nghệ_an/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Tháng 8</td>
+                <td>Đà Nẵng</td>
+                <td>
+                    <a href="/chuyến_đi/đà_nẵng/năm_2018/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Quảng Bình</td>
+                <td>
+                    <a href="/chuyến_đi/quảng_bình/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+          </table>
     </nav>
 
     <footer>
