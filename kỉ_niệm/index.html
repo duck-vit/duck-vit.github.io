@@ -19,6 +19,28 @@
 
     <title>Kỉ niệm</title>
 </head>
+
+<style>
+    table {
+        border-collapse: collapse;
+        border-top: 1px solid #c6c6c6;
+    }
+
+    th, td {
+        border-bottom: 1px solid #c6c6c6;
+        padding: 10px 25px;
+        text-align: left;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #fff2ec;
+    }
+
+    td:first-child, th:first-child, td:nth-child(3), th:nth-child(3) {
+        text-align: center;
+    }
+</style>
+
 <body>
     <div class="wrapper_bgr_header">
         <!-- <div class="header_items web_name">
@@ -76,7 +98,7 @@
                 </a>
             </div>
             <div class="header_items header_nav" id="header_nav_kiniem">
-                <span class="underline_hover">
+                <span id="header_nav_underline" class="underline_hover">
                     <a href="/kỉ_niệm">Kỉ niệm</a>
                     <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -88,7 +110,7 @@
                 </div>
             </div>
             <div class="header_items header_nav" id="header_nav_chuyendi">
-                <span id="header_nav_underline" class="underline_hover">
+                <span class="underline_hover">
                     <a href="/chuyến_đi">Chuyến đi</a>
                     <i class="fa-solid fa-angle-down"></i>
 
@@ -137,33 +159,46 @@
     </nav>
 
     <nav id="nav_2">
-        <article class="show_images">
-            <div class="wrapper_image">
-                <a href="/kỉ_niệm/bé_ủn">
-                    <img style="object-position: center 68%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20230604183258.jpg?v=1745148434464">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/kỉ_niệm/chíp">
-                    <img style="object-position: center 70%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG20220730200959.jpg?v=1745148788071">
-                </a>
-                
-                <div style="width: 50px; display: inline-block"></div>
-              
-                <a href="/kỉ_niệm/hồi_nhỏ">
-                    <img style="object-position: center 23%;" src="https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/IMG_20220319_173611.jpg?v=1745149121529">
-                </a>
-              
-                <div class="img_year_title">
-                  <div class="img_year_titlename">Bé Ủn</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Chíp</div>
-                  <div style="width: 50px; display: inline-block"></div>
-                  <div class="img_year_titlename">Hồi nhỏ</div>
-                </div>
-            </div>
-        </article>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Mục</th>
+                <th>Truy cập</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bé Ủn</td>
+                <td>
+                    <a href="/kỉ_niệm/bé_ủn/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chíp</td>
+                <td>
+                    <a href="/kỉ_niệm/chíp/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hồi nhỏ</td>
+                <td>
+                    <a href="/kỉ_niệm/hồi_nhỏ/">
+                        <span class="material-symbols-outlined">
+                            open_in_new
+                        </span>
+                    </a>
+                </td>
+            </tr>
+        </table>
     </nav>
 
     <footer>
