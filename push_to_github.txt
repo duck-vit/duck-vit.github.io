@@ -1,0 +1,6 @@
+Bước  push code lên github:
+1.  Vào phần Source Control
+2. Lệnh phần "Message":
+Update multiple files
+3. Commit
+4. Sync Changes 1↑

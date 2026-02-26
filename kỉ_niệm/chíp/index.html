@@ -152,7 +152,12 @@
         </div>
         
         <div class="div_narrow" id="div_narrow_2">
-            Video
+            <div id="video-container" class="video-container"></div>
+            <div style="height: 850px;"></div>
+            <a target="_blank" class="link" href="https://www.youtube.com/playlist?list=PLzX84_z7TrA4S3qbXWZElOVbDyQ7FbdMf">
+                <i class="fa-solid fa-link"></i>
+                <u>Playlist:</u> https://www.youtube.com/playlist?list=PLzX84_z7TrA4S3qbXWZElOVbDyQ7FbdMf
+            </a>
         </div>
     </nav>
 
@@ -198,4 +203,38 @@
     </footer>
 </body>
 <script src="/core/chuyendi/main.js"></script>
+<script>
+    async function fetchPlaylistVideos() {
+        const apiKey = 'AIzaSyBOobhMrURHhXlTtPGoadCH4Zmb8T9jLsM';
+        const playlistId = 'PLzX84_z7TrA4S3qbXWZElOVbDyQ7FbdMf';
+        const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistId}&key=${apiKey}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        displayVideos(data.items);
+    }
+
+    function displayVideos(videos) {
+        const videoContainer = document.getElementById('video-container');
+        videos.forEach(video => {
+            const videoElement = document.createElement('div');
+            videoElement.classList.add('video');
+            videoElement.innerHTML = `
+                <a href="https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}" target="_blank">
+                    <img style="
+                    float:left;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                    margin: 12px 12px;
+                    box-shadow: 3px 4px 12px 0 rgba(0,0,0,.1);
+                    border-radius: 5px;
+                    "
+                    width="250px" height="140.625px" src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.title}">
+                </a>
+            `;
+            videoContainer.appendChild(videoElement);
+        });
+    }
+
+    window.onload = fetchPlaylistVideos;
+</script>
 </html>
