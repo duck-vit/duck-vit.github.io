@@ -1,6 +1,7 @@
-Bước  push code lên github:
+Bước push code lên github:
 1.  Vào phần Source Control
-2. Lệnh phần "Message":
+2. Stage All Changes
+3. Lệnh phần "Message":
 Update multiple files
-3. Commit
-4. Sync Changes 1↑
+4. Commit
+5. Sync Changes 1↑
