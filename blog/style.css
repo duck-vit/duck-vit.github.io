@@ -1,13 +1,13 @@
 #nav_1 {
     height: var(--nav_1_height);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 80% 80%;
-    background-color: rgba(0, 0, 0, 0.46);
-    background-blend-mode: darken;
-    padding: 9.3% 0 6.5% 0;
-    background-image: url("https://cdn.glitch.global/bdf8e476-14d3-4c84-a2d2-ba67a72e2d62/1000000589_01.jpg?v=1720281971439");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 80% 36%;
+        background-color: rgba(0, 0, 0, 0.46);
+        background-blend-mode: darken;
+        padding: 9.3% 0 6.5% 0;
+        background-image: url("https://images.pexels.com/photos/36339978/pexels-photo-36339978.jpeg");
 }
 
 :root {
