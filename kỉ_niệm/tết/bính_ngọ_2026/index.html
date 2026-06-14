@@ -144,7 +144,7 @@
         </div>
 
         <div class="div_narrow" id="div_narrow_1">
-            <iframe height="2100px" scrolling="no" src="https://drive.google.com/embeddedfolderview?id=1x3Tu0BaacjOrdQTYJNw7Q_QZ2bqXyuVq#grid"></iframe>
+            <iframe height="1700px" scrolling="no" src="https://drive.google.com/embeddedfolderview?id=1x3Tu0BaacjOrdQTYJNw7Q_QZ2bqXyuVq#grid"></iframe>
             <a target="_blank" class="link" href="https://drive.google.com/drive/folders/1x3Tu0BaacjOrdQTYJNw7Q_QZ2bqXyuVq?usp=sharing">
                 <i class="fa-solid fa-link"></i>
                 <u>Folder drive:</u> https://drive.google.com/drive/folders/1x3Tu0BaacjOrdQTYJNw7Q_QZ2bqXyuVq?usp=sharing
@@ -153,7 +153,11 @@
         
         <div class="div_narrow" id="div_narrow_2">
             <div id="video-container" class="video-container"></div>
-            <div style="height: 320px;"></div>
+            <div style="height: 500px;"></div>
+            <a target="_blank" class="link" href="https://www.youtube.com/playlist?list=PLzX84_z7TrA58LTOJ_ADICWXISOaOucjI">
+                <i class="fa-solid fa-link"></i>
+                <u>Playlist:</u> https://www.youtube.com/playlist?list=PLzX84_z7TrA58LTOJ_ADICWXISOaOucjI
+            </a>
         </div>
     </nav>
 
@@ -202,7 +206,7 @@
 <script>
     async function fetchPlaylistVideos() {
         const apiKey = 'AIzaSyBOobhMrURHhXlTtPGoadCH4Zmb8T9jLsM';
-        const playlistId = 'PLzX84_z7TrA6W-d7-FliTVJuSFjHOS756';
+        const playlistId = 'PLzX84_z7TrA58LTOJ_ADICWXISOaOucjI';
         const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistId}&key=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
