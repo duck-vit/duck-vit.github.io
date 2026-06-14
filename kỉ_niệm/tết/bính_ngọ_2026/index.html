@@ -202,7 +202,7 @@
 <script>
     async function fetchPlaylistVideos() {
         const apiKey = 'AIzaSyBOobhMrURHhXlTtPGoadCH4Zmb8T9jLsM';
-        const playlistId = 'PLzX84_z7TrA6W-d7-FliTVJuSFjHOS756';
+        const playlistId = 'PLzX84_z7TrA58LTOJ_ADICWXISOaOucjI';
         const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistId}&key=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();
