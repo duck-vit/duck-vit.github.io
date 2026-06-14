@@ -229,11 +229,11 @@
         allVideos = allVideos.filter(video => video.snippet && video.snippet.title);
 
         // Sắp xếp theo tên video (A → Z)
-        allVideos.sort((a, b) => {
-            const titleA = a.snippet.title.toLowerCase();
-            const titleB = b.snippet.title.toLowerCase();
-            return titleA.localeCompare(titleB);
-        });
+        // allVideos.sort((a, b) => {
+        //     const titleA = a.snippet.title.toLowerCase();
+        //     const titleB = b.snippet.title.toLowerCase();
+        //     return titleA.localeCompare(titleB);
+        // });
 
         displayVideos(allVideos);
     } catch (error) {
