@@ -185,7 +185,16 @@
         </div>
         
         <div class="div_narrow" id="div_narrow_2">
-            Không có video!
+            <div style="height: 30px;"></div>
+            <div id="video-container" class="video-container"></div>
+            <div style="height: 2000px;"></div>
+            <div style="height: 180px;"></div>
+            <div style="display:block">
+                <a target="_blank" class="link" href="https://www.youtube.com/playlist?list=PLzX84_z7TrA7pf8qWOiZxipxVuh97msu-">
+                    <i class="fa-solid fa-link"></i>
+                    <u>Playlist:</u> https://www.youtube.com/playlist?list=PLzX84_z7TrA7pf8qWOiZxipxVuh97msu-
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -231,4 +240,63 @@
     </footer>
 </body>
 <script src="/core/chuyendi/main.js"></script>
+<script>
+    async function fetchPlaylistVideos() {
+    const apiKey = 'AIzaSyBOobhMrURHhXlTtPGoadCH4Zmb8T9jLsM';
+    const playlistId = 'PLzX84_z7TrA7pf8qWOiZxipxVuh97msu-';
+    let nextPageToken = '';
+    let allVideos = [];
+
+    try {
+        // Lấy toàn bộ video trong playlist, kể cả các trang tiếp theo
+        do {
+            const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${playlistId}&key=${apiKey}&pageToken=${nextPageToken}`;
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.items) {
+                allVideos = allVideos.concat(data.items);
+            }
+
+            nextPageToken = data.nextPageToken;
+        } while (nextPageToken);
+
+        // Lọc bỏ video không có tiêu đề (thường là private)
+        allVideos = allVideos.filter(video => video.snippet && video.snippet.title);
+
+        // Sắp xếp theo tên video (A → Z)
+        allVideos.sort((a, b) => {
+            const titleA = a.snippet.title.toLowerCase();
+            const titleB = b.snippet.title.toLowerCase();
+            return titleA.localeCompare(titleB);
+        });
+
+        displayVideos(allVideos);
+    } catch (error) {
+        console.error('Lỗi khi tải playlist:', error);
+        document.getElementById('video-container').innerText = 'Lỗi khi tải video.';
+    }
+}
+
+function displayVideos(videos) {
+    const videoContainer = document.getElementById('video-container');
+    videoContainer.innerHTML = ''; // Xoá nội dung cũ nếu có
+    videos.forEach(video => {
+        const videoElement = document.createElement('div');
+        videoElement.classList.add('video');
+        videoElement.innerHTML = `
+            <a href="https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}" target="_blank">
+                <img
+                    style="float:left; object-fit: cover; object-position: 50% 50%; margin: 12px; box-shadow: 3px 4px 12px rgba(0,0,0,.1); border-radius: 5px;"
+                    width="250px" height="140.625px"
+                    src="${video.snippet.thumbnails?.high?.url || ''}"
+                    alt="${video.snippet.title}">
+            </a>
+        `;
+        videoContainer.appendChild(videoElement);
+    });
+}
+
+window.onload = fetchPlaylistVideos;
+</script>
 </html>
